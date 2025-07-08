@@ -3,6 +3,8 @@ import "./index.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
 import Services from "./Components/Services/Services.jsx";
+import Banner from "./Components/Banner/Banner.jsx";
+import Subscribe from "./Components/Subscribe/Subscribe.jsx";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <Services/>
+      <Banner/>
+      <Subscribe/>
     </main>
   );
 }

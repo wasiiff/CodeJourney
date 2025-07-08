@@ -46,7 +46,7 @@ function Hero() {
               className="text-3xl lg:text-5xl font-bold !leading-snug"
             >
               Lets Learn to Build a
-              <span className="text-secondary">Website</span> for your Business
+              <span className="text-secondary"> Website</span> for your Business
             </motion.h1>
             <motion.div
               variants={FadeUp(0.8)}
