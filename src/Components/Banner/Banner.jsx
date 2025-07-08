@@ -8,7 +8,7 @@ import { MdOutlineAccessTimeFilled } from "react-icons/md";
 
 function Banner() {
   return (
-    <section>
+    <section name="about">
       <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
         {/* Banner Image  */}
         <motion.img

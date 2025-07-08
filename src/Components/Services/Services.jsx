@@ -69,7 +69,7 @@ export const SlideLeft = (delay) => {
 
 function Services() {
   return (
-    <section className="bg-white">
+    <section name="service" className="bg-white">
       <div className="container pb-14 pt-16">
         <h1 className="text-4xl font-bold text-left pb-10">
           Services We Provide
