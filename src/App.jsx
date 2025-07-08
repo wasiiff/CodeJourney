@@ -5,6 +5,8 @@ import Hero from "./Components/Hero/Hero.jsx";
 import Services from "./Components/Services/Services.jsx";
 import Banner from "./Components/Banner/Banner.jsx";
 import Subscribe from "./Components/Subscribe/Subscribe.jsx";
+import Community from "./Components/Community/Community.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Services/>
       <Banner/>
       <Subscribe/>
+      <Community/>
+      <Footer/>
     </main>
   );
 }
