@@ -8,6 +8,7 @@ const BgImg = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  backgroundAttachment: "fixed",
 };
 
 function Subscribe() {
