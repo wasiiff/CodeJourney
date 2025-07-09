@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import com from "../../assets/Community.jpg";
 import { motion } from "framer-motion";

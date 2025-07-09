@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { delay, motion, easeInOut } from "framer-motion";
 import React from "react";
 import { TbWorld } from "react-icons/tb";

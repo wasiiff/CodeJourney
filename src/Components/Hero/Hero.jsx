@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import HeroBanner from "../../assets/Hero_Banner.png";

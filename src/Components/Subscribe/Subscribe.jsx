@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { FaBell } from "react-icons/fa";
 import BgImage from "../../assets/Subscribe.jpg";
@@ -14,17 +15,18 @@ const BgImg = {
 function Subscribe() {
   return (
     <section className="bg-[#f7f7f7]">
-      <motion.div 
-      initial={{opacity: 0}}
-      whileInView={{opacity: 1}}
-
-      style={BgImg} className="container py-24 md:py-48">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        style={BgImg}
+        className="container py-24 md:py-48"
+      >
         <motion.div
-        initial={{opacity: 0, scale: 0.5}}
-        whileInView={{opacity: 1, scale: 1}}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
-
-        className="flex flex-col justify-center">
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className="flex flex-col justify-center"
+        >
           <div className="text-center space-y-4 lg:max-w-[430px] mx-auto">
             <h1 className="text-4xl font-bold !leading-snug">
               450K+ Students are learning from us
@@ -35,7 +37,11 @@ function Subscribe() {
               Access high-quality courses, expert instructors, and a supportive
               learning environment.
             </p>
-            <a href="#" className="primary-btn !mt-8 inline-flex items-center gap-4 group">Subscribe Now
+            <a
+              href="#"
+              className="primary-btn !mt-8 inline-flex items-center gap-4 group"
+            >
+              Subscribe Now
               <FaBell className="text-2xl group-hover:animate-bounce group-hover:text-lg duration-200 " />
             </a>
           </div>

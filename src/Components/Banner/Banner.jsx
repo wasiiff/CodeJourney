@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import services from "../../assets/services.png";
 import { FadeUp } from "../Hero/Hero";
