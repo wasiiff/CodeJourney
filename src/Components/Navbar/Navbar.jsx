@@ -2,14 +2,13 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { easeInOut, motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NavBar = [
-  { id: 1, title: "Home", path: "home" },
-  { id: 2, title: "Service", path: "service" },
-  { id: 3, title: "About Us", path: "about" },
-  { id: 4, title: "Our Team", path: "team" },
-  { id: 5, title: "Contact Us", path: "contact" },
+  { id: 1, title: "Home", path: "/" },
+  { id: 3, title: "About Us", path: "/about" },
+  { id: 4, title: "Our Team", path: "/team" },
+  { id: 5, title: "Contact Us", path: "/contact" },
 ];
 
 function Navbar() {
@@ -20,7 +19,7 @@ function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className="fixed top-0 z-50 shadow-md w-full">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -37,22 +36,15 @@ function Navbar() {
           <ul className="flex items-center gap-4">
             {NavBar.map((nav) => (
               <li key={nav.id}>
-                <ScrollLink
+                <Link
                   to={nav.path}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
                   className="px-3 py-2 hover:text-secondary relative group cursor-pointer"
                 >
                   {nav.title}
                   <div className="w-2 h-2 bg-secondary rounded-full absolute left-1/2 -translate-x-1/2 top-full mt-1 hidden group-hover:block"></div>
-                </ScrollLink>
+                </Link>
               </li>
             ))}
-            <li>
-              <button className="primary-btn">Sign In</button>
-            </li>
           </ul>
         </div>
 
@@ -81,22 +73,15 @@ function Navbar() {
         <ul className="flex flex-col items-center gap-4">
           {NavBar.map((nav) => (
             <li key={nav.id}>
-              <ScrollLink
+              <Link
                 to={nav.path}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                spy={true}
                 className="block px-3 py-2 hover:text-secondary text-lg cursor-pointer"
-                onClick={() => setIsMobileMenuOpen(false)} // close on click
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {nav.title}
-              </ScrollLink>
+              </Link>
             </li>
           ))}
-          <li>
-            <button className="primary-btn w-full mt-2">Sign In</button>
-          </li>
         </ul>
       </div>
     </nav>
